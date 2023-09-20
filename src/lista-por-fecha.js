@@ -9,7 +9,6 @@ fs.readFile('lista-fecha-temp.json', 'utf8', (err, data) => {
     }
 
     const personas = JSON.parse(data); // Convierte el contenido del archivo JSON en un objeto JavaScript
-    // Luego, puedes procesar los datos y mostrarlos en tu aplicación Electron.
 
     const listaPersonas = document.getElementById('datosContainer');
     const botonMenu = document.getElementById('botonMenu');

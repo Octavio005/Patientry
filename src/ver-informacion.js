@@ -10,7 +10,6 @@ fs.readFile('persona-temp.json', 'utf8', (err, data) => {
     }
 
     personas = JSON.parse(data); // Convierte el contenido del archivo JSON en un objeto JavaScript
-    // Luego, puedes procesar los datos y mostrarlos en tu aplicación Electron.
 
     let tituloInfo = document.getElementById('tituloInfo');
     tituloInfo.textContent = `Información de ${personas[0].nombre} ${personas[0].apellido}`;
