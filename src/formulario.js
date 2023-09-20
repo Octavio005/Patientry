@@ -101,7 +101,6 @@ guardarButton.addEventListener('click', () => {
 
     const personas = JSON.parse(data);
 
-    //data.push(personasMap);
     personas.push(persona);
 
     // Convertir el objeto persona a JSON
