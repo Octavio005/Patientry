@@ -1,0 +1,94 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: aliceblue;
+  }
+  
+  h1 {
+    color: #333;
+  }
+
+  /* Agrega estilos para el contenedor de botones */
+.button-container {
+    text-align: center; /* Centra los botones horizontalmente */
+  }
+  
+  /* Estilos para los botones */
+  a {
+    display: block; /* Hace que los botones sean bloques para que aparezcan uno debajo del otro */
+    margin: 10px auto; /* Añade espacio entre los botones y los centra verticalmente en el contenedor */
+    width: 200px; /* Ajusta el ancho del botón según tus necesidades */
+    height: 50px; /* Ajusta la altura del botón según tus necesidades */
+    font-size: 18px; /* Cambia el tamaño del texto dentro del botón */
+  }
+
+  /* Estilos para los enlaces que se ven como botones */
+.button-like-link {
+    display: block;
+    padding: 10px 20px; /* Ajusta el relleno según el tamaño deseado */
+    background-color: #0074cc; /* Color de fondo del botón */
+    color: #fff; /* Color del texto del botón */
+    text-decoration: none; /* Elimina el subrayado de los enlaces */
+    border: none; /* Elimina el borde del enlace */
+    border-radius: 10px; /* Añade bordes redondeados al botón */
+    cursor: pointer; /* Cambia el cursor al pasar sobre el enlace */
+    margin-top: 15px;
+    margin-bottom: 30px;
+    font-size: 23px;
+    height: 50px; /* Ajusta la altura del botón según tus necesidades */
+    width: 250px;
+    line-height: 25px; /* Centra el texto verticalmente en los botones */  
+    transition: background-color 0.3s;
+}
+
+.button-like-link.inline-block {
+    display: inline-block;
+}
+
+.button-like-link:hover {
+    background-color: #0055a5;
+}
+
+.button-like-link.button-like-link:active {
+    background-color: #0033a5;
+}
+
+.input-editar {
+    width: 300px; /* Ajusta el ancho del input según tus necesidades */
+    height: 40px; /* Ajusta la altura del input según tus necesidades */
+    font-size: 18px; /* Cambia el tamaño del texto dentro del input */
+    padding: 5px; /* Añade relleno alrededor del input */
+    margin: 10px; /* Añade margen alrededor del input */
+}
+
+.input-crear {
+    width: 250px; /* Ajusta el ancho del input según tus necesidades */  
+    height: 20px; /* Ajusta la altura del input según tus necesidades */  
+    font-size: 18px; /* Cambia el tamaño del texto dentro del input */
+    padding: 5px; /* Añade relleno alrededor del input */
+    margin: 10px auto; /* Añade margen alrededor del input */
+    display: block;
+}
+
+#notas {
+  width: 250px; /* Ajusta el ancho del input según tus necesidades */  
+  height: 100px; /* Ajusta la altura del input según tus necesidades */  
+  font-size: 18px; /* Cambia el tamaño del texto dentro del input */
+}
+
+#tituloInfo {
+  margin-bottom: 50px;
+}
+
+#botonMenu {
+  margin-top: 50px;
+}
+
+.elementoInfo {
+  margin-top: 20px;
+}
+
+#infoError{
+  color: red;
+  opacity: 0;
+}
