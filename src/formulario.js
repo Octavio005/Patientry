@@ -42,7 +42,6 @@ guardarButton.addEventListener('click', () => {
     llamarError('¡Ya existe una persona con ese número de DNI!');
     return;
   }
-
   if(hayElementoVacio){
     nombreError = 'Alguno de los datos está vacío';
     llamarError(nombreError);
@@ -121,7 +120,7 @@ guardarButton.addEventListener('click', () => {
 
 
 let validar = (nombre, patron) => {
-  //Validación de nombre
+  //Validación de datos
   if(!patron.test(nombre)){
   return false;
   }
