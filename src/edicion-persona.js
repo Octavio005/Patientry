@@ -4,6 +4,8 @@ const personaString = localStorage.getItem('personaEditar');
 let personaEditada = JSON.parse(personaString);
 
 const botonGuardar = document.getElementById('guardarPersona');
+const info = document.getElementById('info');
+info.style.opacity = 0;
 document.getElementById('nombre').value = personaEditada.nombre;
 document.getElementById('apellido').value = personaEditada.apellido;
 document.getElementById('edad').value = personaEditada.edad;
@@ -57,4 +59,13 @@ botonGuardar.addEventListener('click', () => {
             console.log('Persona editada guardada.');
         });
     });
+
+    confirmarCreacion(personaEditada);
 });
+
+
+let confirmarCreacion = (persona) => {
+    info.textContent = `¡Los datos de ${persona.nombre} ${persona.apellido} han sido editados correctamente!`;
+    info.style.opacity = 100;
+    info.style.color = 'Green';
+  }
