@@ -6,7 +6,7 @@
   <link rel="stylesheet" type="text/css" href="styles.css">
 </head>
 <body>
-  <h1>Ingrese nombre y apellido, DNI o número de afiliado para crear a la persona</h1>
+  <h1>Edite el/los datos a modificar</h1>
   <div id="formulario" class="button-container">
     <input id="nombre" class="input-crear" placeholder="Nombre" />
     <input id="apellido" class="input-crear" placeholder="Apellido" />
@@ -16,11 +16,11 @@
     <input type="number" id="dni" class="input-crear" placeholder="DNI" />
     <input id="obraSocial" class="input-crear" placeholder="Obra Social" />
     <input type="number" id="numAfiliado" class="input-crear" placeholder="Número de afiliado" />
-    <textarea id="notas"></textarea>
-    <h3 id="infoError">Error génerico</h3>
-    <a id="crearPersona" class="button-like-link inline-block">Crear</a>
+    <input id="notas" placeholder="Notas" />
+    <h3 id="info">Genérico</h3>
+    <a id="guardarPersona" class="button-like-link inline-block">Guardar</a>
     <a class="button-like-link  inline-block" href="index.html">Volver al menú principal</a>
   </div>
-  <script src="formulario.js"></script>
+  <script src="../js/edicion-persona.js"></script>
 </body>
 </html>

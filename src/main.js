@@ -12,5 +12,5 @@ app.on("ready", () => {
       enableRemoteModule: true,
     },
   });
-  mainWindow.loadURL(`file://${__dirname}/index.html`);
+  mainWindow.loadURL(`file://${__dirname}/html/index.html`);
 });
