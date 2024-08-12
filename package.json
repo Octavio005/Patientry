@@ -1,17 +1,29 @@
 {
   "name": "programa-pacientes",
   "version": "1.1.1",
-  "description": "",
-  "main": "index.js",
+  "description": "Descripción de tu aplicación",
+  "main": "src/main.js",
   "scripts": {
     "start": "electron ./src/main.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "electron-builder"
   },
-  "author": "",
+  "author": "Tu Nombre",
   "license": "ISC",
   "devDependencies": {
     "electron": "^26.2.1",
-    "npm": "^6.14.18",
+    "electron-builder": "^24.13.3",
     "typescript": "^5.2.2"
-  }  
+  },
+  "build": {
+    "appId": "com.example.programa-pacientes",
+    "productName": "Programa Pacientes", 
+    "files": [
+      "src/**/*",
+      "node_modules/**/*"
+    ],
+    "win": {
+      "target": "nsis",
+      "artifactName": "${productName}-${version}-setup.${ext}"
+    }
+  }
 }
